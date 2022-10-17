@@ -1,0 +1,6 @@
+@mixin BackgroundColorSet {
+    background-color: $primarColor;
+    color: white;
+    font-size: 25px;
+    padding: 24px;
+}

@@ -1,0 +1,6 @@
+@import "../Sass/app";
+
+h3 {
+    text-align: center;
+    @include BackgroundColorSet;
+}
