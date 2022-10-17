@@ -5,19 +5,31 @@ import { InternalservererrorComponent } from './Components/internalservererror/i
 import { AccessdeniedComponent } from './Components/accessdenied/accessdenied.component';
 import { StructureDirective } from './Directives/structure.directive';
 import { StructurePipe } from './Pipes/structure.pipe';
+import { MaterialModule } from './Modules/material.module';
 
+const Components = [
+  PagenotfoundComponent,
+  InternalservererrorComponent,
+  AccessdeniedComponent,
+  StructureDirective,
+  StructurePipe
+];
 
+const Modules = [
+  MaterialModule
+];
 
 @NgModule({
   declarations: [
-    PagenotfoundComponent,
-    InternalservererrorComponent,
-    AccessdeniedComponent,
-    StructureDirective,
-    StructurePipe
+    Components
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    Modules
+  ],
+  exports: [
+    Components,
+    Modules
   ]
 })
 export class SharedModule { }

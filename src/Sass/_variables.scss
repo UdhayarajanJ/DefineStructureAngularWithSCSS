@@ -1,2 +1,11 @@
 $primarColor : red;
 $secondaryColor: yellow;
+
+$Application__PrimaryColor: (
+    50: #fd7e14,
+    100: #14f300,
+    900: #fd7e14,
+    contrast: (50: white,
+        100:white,
+        900:white)
+);
